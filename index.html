@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irakli Kurtsikidze — Quant-Finance Terminal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- INTERACTIVE BACKGROUND MOUSE TRACKER -->
+    <div class="radar-glow" id="radarGlow"></div>
+
+    <!-- 1. PREMIUM METALLIC DOLLAR PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="dollar-wrapper">
+                <span class="matrix-dollar">$</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar-progress"></div>
+            </div>
+            <p class="loading-text"></p>
+        </div>
+    </div>
+
+    <!-- 2. HIGH-END INTERACTIVE CONTACT OVERLAY FRAME -->
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-frame">
+            <div class="modal-glare"></div>
+            <div class="modal-header">
+                <span class="modal-tag"></span>
+                <button id="closeModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">IRAKLI KURTSIKIDZE</h3>
+                <p class="modal-subtitle"></p>
+            
+                <div class="contact-channels">
+                    <div class="channel-box">
+                        <span class="channel-label">E-MAIL ADDRESS</span>
+                        <a href="mailto:qurcikidzeko@gmail.com" class="channel-value">qurcikidziko@gmail.com</a>
+                    </div>
+                    <div class="channel-box">
+                        <span class="channel-label">PHONE</span>
+                        <a href="tel:+995591213211" class="channel-value">+995 591 213 211</a>
+                    </div>
+                </div>
+                
+                <div class="modal-footer-lines">
+                    <div class="f-line"></div>
+                    <div class="f-line short"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN APP CONTAINER -->
+    <div id="app-container" class="hidden">
+        
+        <!-- TOP NAVIGATION BAR -->
+        <header class="navbar">
+            <div class="logo-area">
+                <span class="status-indicator blinking"></span>
+                <span class="logo-text">IK<span class="gold-text">.CORE</span></span>
+            </div>
+            <div class="terminal-time" id="terminalTime">SYS_TIME: 00:00:00 UTC</div>
+            <button id="openModalBtn" class="contact-cta">
+                <span class="cta-inner">CONTACT ME</span>
+            </button>
+        </header>
+
+        <!-- DASHBOARD GRID ARCHITECTURE -->
+        <main class="dashboard">
+            
+            <!-- SIDEBAR: PROFILE & TARGETING METRICS -->
+            <aside class="sidebar">
+                <div class="glass-card profile-card">
+                    <div class="profile-frame">
+                        <div class="avatar-fallback">IK</div>
+                    </div>
+                    <h1 class="user-name">Irakli Kurtsikidze</h1>
+                    <p class="user-title">FINANCE STUDENT // JUNIOR ANALYST</p>
+                    
+                    <div class="meta-separator"></div>
+                    
+                    <div class="data-stream">
+                        <div class="stream-row"><span class="label">LOC //</span> <span class="val">Tbilisi, GE / Remote</span></div>
+                        <div class="stream-row"><span class="label">EDU //</span> <span class="val">BTU (2022 - 2026)</span></div>
+                    </div>
+                </div>
+
+                <div class="glass-card language-card">
+                    <h3>Languages</h3>
+                    <div class="lang-row"><span>GEORGIAN (NATIVE)</span><div class="bar-total"><div class="bar-fill" style="width: 100%"></div></div></div>
+                    <div class="lang-row"><span>ENGLISH (PROFESSIONAL)</span><div class="bar-total"><div class="bar-fill" style="width: 90%"></div></div></div>
+                    <div class="lang-row"><span>RUSSIAN (INTERMEDIATE)</span><div class="bar-total"><div class="bar-fill" style="width: 60%"></div></div></div>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT DISPLAY TERMINAL -->
+            <section class="main-content">
+                
+                <!-- PROFILE EXECUTIVE SUMMARY -->
+                <div class="glass-card panel">
+                    <div class="panel-header">
+                        <h2>ABOUT ME</h2>
+                    </div>
+                    <p class="summary-text">
+                        Highly motivated 3rd-year Business Administration (Finance) student backed by verified execution in client data handling, tactical negotiations, and deep market evaluation. Engineered with an analytical, solution-driven framework and a persistent methodology aimed at identifying functional loopholes to crack down on complex financial puzzles. Formulated for high-trajectory development within stable, growth-oriented market operations.
+                    </p>
+                </div>
+
+                <!-- INTERACTIVE ENGINE COMPONENT -->
+                <div class="glass-card panel">
+                    <div class="panel-header">
+                        <h2>SKILLS</h2>
+                    </div>
+                    <p class="panel-instruction">Select a core competency to query system parameters:</p>
+                    
+                    <div class="skills-interactive-grid">
+                        <div class="skills-menu">
+                            <button class="skill-btn active" data-skill="fin">FINANCIAL ANALYSIS</button>
+                            <button class="skill-btn" data-skill="excel">MICROSOFT EXCEL (ADV)</button>
+                            <button class="skill-btn" data-skill="data">DATA & VALUATION</button>
+                            <button class="skill-btn" data-skill="solve">SOLUTION ARCHITECTURE</button>
+                        </div>
+                        <div class="skills-display-terminal">
+                            <div class="terminal-header">DATA_OUTPUT_STREAM: <span id="terminalSkillName">FINANCIAL ANALYSIS</span></div>
+                            <div class="terminal-body">
+                                <p id="terminalSkillDesc">Foundational framework interpretation, quantitative financial modelling vectors, structural cost tracking, and core liquidity matrix evaluation.</p>
+                                <div class="metric-visual">
+                                    <div class="visual-line line-1"></div>
+                                    <div class="visual-line line-2"></div>
+                                    <div class="visual-line line-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCE CHRONOLOGY -->
+                <div class="glass-card panel">
+                    <div class="panel-header">
+                        <h2>EXPERIENCE</h2>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-node">
+                            <div class="node-meta">
+                                <span class="node-role">REAL ESTATE AGENT</span>
+                                <span class="node-company">BEST HOME</span>
+                                <span class="node-date">2022</span>
+                            </div>
+                            <div class="node-body">
+                                <ul>
+                                    <li>Evaluated real estate market vectors and structural asset pricing trends to generate custom, high-yield financial options for prospective investors.</li>
+                                    <li>Executed multi-layer client transaction closures, streamlining document flow and maximizing negotiation leverage points.</li>
+                                    <li>Maintained and refactored localized relational databases containing transaction histories, property availability arrays, and investor requirements lists.</li>
+                                    <li>Deployed active problem-solving algorithms under strict timeline bottlenecks to secure seamless transaction fulfillment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
